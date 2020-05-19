@@ -1,0 +1,17 @@
+{
+  "name": "predict",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "node server",
+    "server": "nodemon server",
+    "client": "npm start --prefix climate-predict",
+    "dev": "concurrently \"python app.py\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix climate-predict && npm run build --prefix climate-predict"
+  },
+  "author": "Archie",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^5.1.0"
+  }
+}
