@@ -24,7 +24,9 @@ from sklearn.metrics import accuracy_score
 from sklearn.preprocessing import PolynomialFeatures
 from datetime import timedelta
 
-app = Flask(__name__, static_folder='/build', static_url_path='/')
+app = Flask(__name__, static_url_path='',
+                  static_folder='climate-predict/build',
+                  template_folder='climate-predict/build')
 
 months = [
     'January',
