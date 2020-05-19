@@ -25,8 +25,8 @@ from sklearn.preprocessing import PolynomialFeatures
 from datetime import timedelta
 
 app = Flask(__name__, static_url_path='',
-                  static_folder='climate-predict/build',
-                  template_folder='climate-predict/build')
+                  static_folder='build',
+                  template_folder='build')
 
 months = [
     'January',
