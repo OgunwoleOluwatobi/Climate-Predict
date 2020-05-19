@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "python3 app.py",
+    "start": "python app.py",
     "server": "nodemon server",
     "client": "npm start --prefix climate-predict",
     "dev": "concurrently \"python app.py\" \"npm run client\"",
