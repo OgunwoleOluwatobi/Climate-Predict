@@ -1,0 +1,7 @@
+flask
+numpy
+pandas
+datetime
+sklearn
+csv
+math
