@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Climatic Prediction System</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+
+    <header class="v-header">
+        <div class="fullscreen-video-wrap">
+            <div class="vid">
+                <video src="../static/cloud.mp4" autoplay="true" loop="true"></video>
+            </div>
+            <div class="header-overlay"></div>
+        </div>
+        
+    
+    <div class="header-content container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand nav_title" href="index.htm">
+            <img src="../static/cloud_pic.png" width="150" height="50" class="d-inline-block align-top" alt="">
+            <h4>Climatic Prediction System</h4>
+        </a>
+        </nav>
+        <div class="temp">
+            <h5>24°C</h5>
+        </div>
+        <div class="circ">
+            <div class="circle">
+                <img src="../static/humid.png" height="80" width="80">
+            </div>
+            <div class="circle">
+                <img src="../static/prec.png" height="80" width="80">
+            </div>
+        </div>
+        <div class="first_text">
+            <p class="pe">Humidity</p>
+            <p class="pt">Precipitation</p>
+            <p>
+                <a href="/durationselection" class="btn">Custom Predictions</a>
+                <a href="#inst" class="read">Read Instructions</a>
+            </p>
+        </div>
+
+        <div class="Values">
+            <p class="p">95.0</p>
+            <p class="p">0.10</p>
+            
+        </div>
+        <div class="cont">
+            <img src="../static/arrow.png" class="arrow" width="50" height="40" alt="arrow">
+        </div>
+    </div>
+    </header>
+    <div class="second">
+        <div class="heading">
+            <h5>A Predictive Climate System</h5>
+            <h5>For Agriculture</h5>
+        </div>
+        <div class="subhead">
+            <p>This is a prediction system that helps in predicting future values of certain climate variables useful to agriculture in order to enable the user plan ahead of time to have good agricultural output and prevent unexpected result</p>
+        </div>
+        <div class="div circ_two">
+            <div class="circle_two right">
+                <img src="../static/humid.png" height="80" width="80">
+            </div>
+            <div class="circle_two right">
+                <img src="../static/prec.png" height="80" width="80">
+            </div>
+            <div class="circle_two">
+                <img src="../static/temp.png" height="80" width="80">
+            </div>
+        </div>
+        <div class="snd_text">
+            <p class="right">Humidity</p>
+            <p class="right">Precipitation</p>
+            <p>Temperature</p>
+        </div>
+    </div>
+    <div class="inst" id="inst">
+        <div class="heading">
+            <h4>Instructions</h4>
+        </div>
+        <div class="body_content">
+            <div class="content_left">
+                <div class="number"><p>1</p></div>
+                <div class="body_text">
+                    <p>To make Custom predictions from a particular month and year in the future till aother peroid, select the custom prediction button.</p>
+                </div>
+            </div>
+            <div class="content_left">
+                <div class="body_text_one">
+                    <p>Input values for the month from the dropdown and the year for both peroid required for prediction the select the predict button to start prediction</p>
+                </div>
+                <div class="number"><p>2</p></div>
+            </div>
+            <div class="content_left">
+                <div class="number"><p>3</p></div>
+                <div class="body_text">
+                    <p>View the output of the prediction and export if you want to have to saved and you can plan all along and have a good agricultural year</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

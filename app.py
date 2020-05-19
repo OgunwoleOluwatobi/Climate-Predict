@@ -126,7 +126,7 @@ def train():
 
 @app.route('/')
 def index():
-    return render_template('build/index.html')
+    return render_template('index.html')
 
 @app.route('/current', methods=['GET'])
 def current():
