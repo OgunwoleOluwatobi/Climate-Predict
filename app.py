@@ -7,7 +7,7 @@ from sklearn import preprocessing
 from sklearn.pipeline import make_pipeline
 from sklearn.model_selection import GridSearchCV
 from sklearn.metrics import r2_score
-from sklearn.externals import joblib
+import joblib
 from sklearn.preprocessing import RobustScaler
 from sklearn.preprocessing import StandardScaler
 from sklearn.neural_network import MLPClassifier
