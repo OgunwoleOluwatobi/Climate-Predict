@@ -24,7 +24,7 @@ from sklearn.metrics import accuracy_score
 from sklearn.preprocessing import PolynomialFeatures
 from datetime import timedelta
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='climate-predict/build', static_url_path='/')
 
 months = [
     'January',
@@ -124,7 +124,9 @@ def train():
     print('Accuracy: ', tmodel.score(X_test, y_test))
     joblib.dump(tmodel, 'rainfall.pkl')
 
-
+@app.route('/')
+def index():
+    return app.send_static_file('index.html')
 
 @app.route('/current', methods=['GET'])
 def current():
