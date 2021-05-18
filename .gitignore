@@ -1,2 +1,2 @@
-node_modules
-/climate-predict/node_modules
+node_modules/
+# climate-predict/node_modules
