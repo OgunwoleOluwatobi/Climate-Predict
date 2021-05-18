@@ -1,0 +1,84 @@
+.LogoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.LogoContainer h4 {
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 0.05rem;
+}
+
+.Logo {
+    height: 50px;
+    width: 100px;
+}
+
+.Bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 100vw;
+}
+
+@media screen and (max-width: 950px) {
+    .LogoContainer h4 {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .LogoContainer h4 {
+        font-size: 20px;
+    }
+    .Logo {
+        height: 40px;
+        width: 80px;
+    }
+}
+
+@media screen and (max-width: 450px) {    
+    .LogoContainer h4 {
+        font-size: 18px;
+    }
+    .Logo {
+        height: 30px;
+        width: 60px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .Bar {
+        text-align: center;
+    }
+    .LogoContainer {
+        width: 100%;
+        margin: auto;
+    }
+    .title-hold {
+        width: 80%;
+        text-align: center;
+    }
+    .LogoContainer h4 {
+        font-size: 16px;
+        padding: 0 10px 0 10px;
+    }
+    .Logo {
+        height: 30px;
+        width: 60px;
+    }
+}
+
+@media screen and (max-width: 336px) {
+    .LogoContainer h4 {
+        font-size: 14px;
+        padding: 0 10px 0 10px;
+    }
+    .Logo {
+        height: 25px;
+        width: 50px;
+    }
+}
