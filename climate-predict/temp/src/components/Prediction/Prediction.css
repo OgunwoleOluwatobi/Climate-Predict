@@ -1,0 +1,230 @@
+.Body {
+    background-image: url(../../assets/Cloud_Background_red.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.Content-b {
+    position: absolute;
+    margin-top: 13vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    text-align: center;
+}
+
+.Content-head {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+.hold {
+    display: flex;
+    justify-content: space-around;
+    width: 30vw;
+}
+
+.Content-head h5 {
+    font-size: 8vh;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 30px;
+    align-self: center;
+    margin-left: 8vw;
+    letter-spacing: 0.2rem;
+}
+
+.btne p {
+    border: 1.8px solid #4FE472;
+    border-radius: 30px;
+    padding: 10px 18px 10px 18px;
+    background-color: rgba(79, 228, 114, 0.418);
+    color: #4FE472;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.08rem;
+    transition: ease-out 0.6s;
+}
+
+.btne p:hover {
+    background: #4FE472;
+    text-decoration: none;
+    border: 1.5px solid #4FE472;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.btnp p {
+    border-radius: 30px;
+    padding: 10px 30px 10px 30px;
+    background-color: rgba(255, 255, 255, 0.418);
+    color: #fff;
+    border: 1.8px solid #fff;
+    transition: ease-out 0.6s;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+}
+
+.btnp p:hover {
+    background: #fff;
+    text-decoration: none;
+    border: 1.5px solid #fff;
+    color: #000;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.Predict-Container {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - (33vh));
+    background-color: white;
+}
+
+.Predict-Container::-webkit-scrollbar {
+    display: none;
+}
+
+.Predict::-webkit-scrollbar {
+}
+
+.Predict {
+    max-height: 100%;
+    overflow: auto;
+    width: 100%;
+}
+
+.title h1 {
+    font-size: 6vh;
+    letter-spacing: 0.1rem;
+}
+
+.indN {
+    font-size: 3vh;
+    letter-spacing: 0.1rem;
+}
+
+.tempN {
+    font-size: 3vh;
+    letter-spacing: 0.1rem;
+}
+
+.humiN {
+    font-size: 3vh;
+    letter-spacing: 0.1rem;
+}
+
+.rainN {
+    font-size: 3vh;
+    letter-spacing: 0.1rem;
+}
+
+.ind {
+    font-size: 2.5vh;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+}
+
+.temp {
+    font-size: 2.5vh;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+}
+
+.humi {
+    font-size: 2.5vh;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+}
+
+.rain {
+    font-size: 2.5vh;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+}
+
+@media screen and (max-width: 920px) {
+    .Content-head {
+        justify-content: space-around;
+    }
+    .hold {
+        width: 40vw;
+    }
+    
+}
+
+@media screen and (max-width: 770px) {
+    .Content-head {
+        display: grid;
+        justify-content: space-around;
+    }
+    .hold {
+        width: 80vw;
+        justify-content: space-around;
+    }
+    .btne p {
+        padding: 8px 34px 8px 34px;
+    }
+    .btnp p {
+        padding: 8px 30px 8px 30px;
+    }
+}
+
+@media screen and (max-width : 370px) {
+    .hold {
+        display: grid;
+    }
+} 
+
+@media screen and (max-width: 500px) {
+    .title h1 {
+        font-size: 6vw;
+    }
+    
+    .indN {
+        font-size: 4vw;
+    }
+    
+    .tempN {
+        font-size: 4vw;
+    }
+    
+    .humiN {
+        font-size: 4vw;
+    }
+    
+    .rainN {
+        font-size: 4vw;
+    }
+    
+    .ind {
+        font-size: 3.5vw;
+    }
+    
+    .temp {
+        font-size: 3.5vw;
+    }
+    
+    .humi {
+        font-size: 3.5vw;
+    }
+    
+    .rain {
+        font-size: 3.5vw;
+    }
+}
+
+@media screen and (max-height: 710px) {
+    .Body {
+        height: calc(100vh + (10vh));
+    }
+}
